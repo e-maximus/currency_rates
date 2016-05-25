@@ -1,0 +1,10 @@
+services:
+    exchange_currencies_loader:
+        class: Rate\CurrencyBundle\Services\ExchangeCurrencies
+        arguments: ["@=service(parameter('currency.active_data_provider'))", "@doctrine.orm.entity_manager"]
+    currency_data_provider_yahoo:
+        class: Rate\CurrencyBundle\DataProviders\Yahoo
+        arguments: ['@buzz']
+    currency_data_provider_rsb:
+        class: Rate\CurrencyBundle\DataProviders\Rsb
+        arguments: ['@buzz']

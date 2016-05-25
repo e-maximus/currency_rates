@@ -1,0 +1,4 @@
+currency_rates:
+  type: rest
+  resource:     "RateCurrencyBundle:Api"
+  name_prefix:  api_

@@ -1,0 +1,36 @@
+.header-h1 {
+    -webkit-box-shadow: 0 4px 3px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 4px 3px -3px rgba(0,0,0,0.75);
+    box-shadow: 0 4px 3px -3px rgba(0,0,0,0.75);
+    text-align: center;
+    font-weight: lighter;
+    font-size: 50px;
+    background-color: #eaeaea;
+    margin-bottom: 20px;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:center;
+    margin-right:-4px;
+}
+
+.currency {
+    max-width: 300px;
+}
+
+.currency-name {
+    font-size: 50px;
+    color: #ffa03a
+}
+
+.currency-rate {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+body {
+    font-family: "Comic Sans MS", Arial, sans-serif; !important;
+}
+

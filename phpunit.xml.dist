@@ -1,0 +1,11 @@
+<!-- phpunit.xml.dist -->
+<phpunit>
+    <php>
+        <server name="KERNEL_DIR" value="/srv/www/currency/currency/app" />
+    </php>
+    <testsuites>
+        <testsuite name="Currency Test Suite">
+            <directory>./src/Rate/CurrencyBundle/Tests/*</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

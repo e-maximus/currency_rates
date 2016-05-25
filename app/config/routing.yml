@@ -1,0 +1,8 @@
+rate_currency_api:
+    type: rest
+    prefix: /api
+    resource: "api_routing.yml"
+
+index_show:
+    path:      /
+    defaults:  { _controller: RateCurrencyBundle:Index:index }
