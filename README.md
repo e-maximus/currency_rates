@@ -10,7 +10,10 @@ $ php composer.phar install
 $ npm i
 ```
 
-3. Run gulp in a project folder for making build
+3. Copy /app/config/parameters.yml.dist to /app/config/parameters.yml and set up database connection params. 
+
+
+4. Run gulp in a project folder for making build
 ```
 $ gulp
 ```
@@ -22,10 +25,9 @@ Update currency rates
 $ php app/console currencies:update
 ```
 
-Change currency.active_data_provider if you like to change data provider
+Change currency.active_data_provider (/app/config/parameters.yml) if you like to change data provider
 ```
 parameters:
-    locale: en
-    currency.active_data_provider: currency_data_provider_rsb
+    currency.active_data_provider: currency_data_provider_yahoo
 
 ```
