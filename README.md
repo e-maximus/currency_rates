@@ -1,17 +1,24 @@
 # Getting started
 
- - Download composer.phar and install modules
+ - Download composer.phar, install modules and set up project params during installation
 ```
 $ php composer.phar install
+```
+
+ - create database, if it's not exists
+```
+$ php app/console doctrine:database:create
+```
+
+ - create tables
+```
+$ php app/console doctrine:schema:update --force
 ```
 
  - Install npm dependencies
 ```
 $ npm i
 ```
-
- - Copy /app/config/parameters.yml.dist to /app/config/parameters.yml and set up database connection params. 
-
 
  - Run gulp in a project folder for making build and watching for changes
 ```
