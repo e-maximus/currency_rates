@@ -7,9 +7,9 @@ use Rate\CurrencyBundle\Exceptions\LogicException;
 
 class Yahoo extends AbstractDataProvider
 {
-
+    // @codingStandardsIgnoreStart
     const URL = "https://query.yahooapis.com/v1/public/yql?q=select+*+from+yahoo.finance.xchange+where+pair+=+%22{{CURRENCIES_LIST}}%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=";
-
+    // @codingStandardsIgnoreEnd
     const DEFAULT_TIMEZONE = "Europe/Moscow";
 
     /**
