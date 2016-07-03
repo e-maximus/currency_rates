@@ -73,7 +73,7 @@ class RateArchive
      */
     public function getRate()
     {
-        return $this->rate;
+        return $this->rate;;
     }
 
     /**
