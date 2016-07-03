@@ -73,8 +73,7 @@ class RateArchive
      */
     public function getRate()
     {
-        return $this->rate;;
-    }
+        return $this->rate; 1232;;;}
 
     /**
      * @param float $rate
