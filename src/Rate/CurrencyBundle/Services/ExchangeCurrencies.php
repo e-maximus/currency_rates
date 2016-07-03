@@ -12,10 +12,12 @@ class ExchangeCurrencies
 
     /** @var  EntityManager */
     protected $entityManager;
-
     
-    public function __construct(CurrencyBundle\CurrencyInterface\ExchangeRateProvider $dataProvider, EntityManager $entityManager)
-    {
+    
+    public function __construct(
+        CurrencyBundle\CurrencyInterface\ExchangeRateProvider $dataProvider,
+        EntityManager $entityManager
+    ) {
         $this->setDataProvider($dataProvider);
         $this->setEntityManager($entityManager);
     }
@@ -33,7 +35,7 @@ class ExchangeCurrencies
         $currencyRates = $this->getDataProvider()->getRateValues($currencies);
         $allRates = $this->getEntityManager()->getRepository(CurrencyBundle\Entity\RateCurrent::class)->findAll();
 
-        $findByName = function($currencyName) use ($allRates) {
+        $findByName = function ($currencyName) use ($allRates) {
             if (!is_array($allRates) && !count($allRates)) {
                 return null;
             }
@@ -48,7 +50,6 @@ class ExchangeCurrencies
         };
 
         foreach ($currencyRates['rates'] as $name => $rate) {
-            
             $rateEntity = $findByName($name);
             if (!$rateEntity) {
                 $rateEntity = new CurrencyBundle\Entity\RateCurrent();
@@ -74,7 +75,6 @@ class ExchangeCurrencies
         }
 
         foreach ($currencyRates['rates'] as $name => $rate) {
-
             $archiveRate = new CurrencyBundle\Entity\RateArchive();
             $archiveRate->setName($name);
             $archiveRate->setRate($rate);

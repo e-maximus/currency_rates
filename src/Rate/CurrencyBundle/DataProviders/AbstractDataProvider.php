@@ -22,7 +22,7 @@ abstract class AbstractDataProvider implements CurrencyBundle\CurrencyInterface\
      * @param $url
      * @return string
      */
-    public function getRequestContent($url) 
+    public function getRequestContent($url)
     {
         $browser = new Browser();
         $response = $browser->get($url);

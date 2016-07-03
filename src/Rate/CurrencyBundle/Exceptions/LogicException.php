@@ -2,4 +2,6 @@
 
 namespace Rate\CurrencyBundle\Exceptions;
 
-class LogicException extends CurrencyRateException {};
+class LogicException extends CurrencyRateException
+{
+}

@@ -108,7 +108,7 @@ class ExchangeCurrenciesTest extends KernelTestCase
     /**
      * @return EntityManager
      */
-    protected function getEntityManager() 
+    protected function getEntityManager()
     {
         return static::$entityManager;
     }

@@ -4,7 +4,6 @@ namespace Rate\CurrencyBundle\Controller;
 
 use Doctrine\ORM\EntityManager;
 use FOS\RestBundle\Controller\FOSRestController;
-use Monolog\Logger;
 use Rate\CurrencyBundle\Entity\RateCurrent;
 use FOS\RestBundle\Controller\Annotations as Rest;
 
@@ -22,5 +21,4 @@ class ApiController extends FOSRestController
 
         return ['rates' => $entityManager->getRepository(RateCurrent::class)->findAll()];
     }
-
 }

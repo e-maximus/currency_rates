@@ -37,7 +37,7 @@ class RateCurrent
      * @var float
      *
      * @JMS\Expose
-     * 
+     *
      * @ORM\Column(name="rate", type="decimal", precision=10, scale=4)
      */
     private $rate;
@@ -45,7 +45,7 @@ class RateCurrent
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
