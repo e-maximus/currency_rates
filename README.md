@@ -5,7 +5,7 @@
 $ php composer.phar install
 ```
 
- - create database, if it's not exists
+ - create database, if it doesn't exists
 ```
 $ php app/console doctrine:database:create
 ```
