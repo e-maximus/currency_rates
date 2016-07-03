@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "018a86e505c908a62251ab716b9101ed",
-    "content-hash": "e6e8bbcdbb733b27fd17f4d4defd58b8",
+    "hash": "78ed39d9d46be8ac091926f8557fe1f0",
+    "content-hash": "a739fb4e23bf7d76cab60651ffac030e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -3377,6 +3377,61 @@
                 "scraper"
             ],
             "time": "2015-11-05 12:58:44"
+        },
+        {
+            "name": "fabpot/php-cs-fixer",
+            "version": "v1.11.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
+                "reference": "eeb280e909834603ffe03524dbe0066e77c83084"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/eeb280e909834603ffe03524dbe0066e77c83084",
+                "reference": "eeb280e909834603ffe03524dbe0066e77c83084",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.3.6",
+                "sebastian/diff": "~1.1",
+                "symfony/console": "~2.3|~3.0",
+                "symfony/event-dispatcher": "~2.1|~3.0",
+                "symfony/filesystem": "~2.1|~3.0",
+                "symfony/finder": "~2.1|~3.0",
+                "symfony/process": "~2.3|~3.0",
+                "symfony/stopwatch": "~2.5|~3.0"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "0.7.*@dev"
+            },
+            "bin": [
+                "php-cs-fixer"
+            ],
+            "type": "application",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\CS\\": "Symfony/CS/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dariusz Rumiński",
+                    "email": "dariusz.ruminski@gmail.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "A tool to automatically fix PHP code style",
+            "abandoned": "friendsofphp/php-cs-fixer",
+            "time": "2016-06-07 07:51:27"
         },
         {
             "name": "gitonomy/gitlib",

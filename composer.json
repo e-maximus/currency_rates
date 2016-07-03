@@ -32,7 +32,8 @@
         "behat/mink-goutte-driver": "^1.2",
         "squizlabs/php_codesniffer": "2.*",
         "escapestudios/symfony2-coding-standard": "~2.0",
-        "phpro/grumphp": "^0.9.1"
+        "phpro/grumphp": "^0.9.1",
+        "fabpot/php-cs-fixer": "^1.11"
     },
     "scripts": {
         "post-install-cmd": [
